@@ -1,0 +1,1947 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>loop</title>
+    <style type="text/css" media="all">
+    body{
+      background: black;
+    }
+  .jud {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 300px;
+    height: 450px;
+    background: linear-gradient(to top left,#ff0000
+    ,#7000ff);
+    border-radius: 30px;
+    animation: kotak 2s infinite;
+    border: black solid 2px;
+  }
+  h2{
+    font-size: 30px;
+  }
+  .cju{
+    position: absolute;
+    margin-left: 44px;
+    width: 209px;
+    height: 60px;
+    border-bottom: black solid 4px;
+  }
+  .jul{
+    position: absolute;
+    margin-left: 1px;
+    font-family: Tahoma;
+    margin-top: 25px;
+  }
+  .jul2{
+    position: absolute;
+    margin-left: 76px;
+    font-family: Times New Roman;
+    margin-top: 25px;
+  }
+  .jul3{
+    position: absolute;
+    margin-left: 151px;
+    font-family: Monospace;
+    margin-top: 25px;
+  }
+  .bat,.bat2{
+    position: absolute;
+    width: 5px;
+    height: 240px;
+    background: black;
+  }
+  .bat4,.bat5{
+    position: absolute;
+    width: 240px;
+    height: 5px;
+    background: black;
+    margin-left: 30px;
+  }
+  .bat{
+    margin-top: 100px;
+    margin-left: 110px;
+  }
+  .bat2{
+    margin-left: 185px;
+    margin-top: 100px;
+  }
+  .bat4{
+    margin-top: 180px;
+  }
+  .bat5{
+    margin-top: 260px;
+  }
+  .tom,.tom2,.tom3,.tom4,.tom5,.tom6,.tom7,.tom8,.tom9{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: none;
+    border: none;
+    border-radius: 100px;
+  }
+  .tom,.tom2,.tom3{
+    margin-top: 107.5px;
+  }
+  .tom,.tom4,.tom7{
+    margin-left: 40px;
+  }
+  .tom2,.tom5,.tom8{
+    margin-left: 115px;
+  }
+  .tom3,.tom6,.tom9{
+    margin-left: 190px;
+  }
+  .tom4,.tom5,.tom6{
+    margin-top: 187.5px;
+  }
+  .tom7,.tom8,.tom9{
+    margin-top: 267.5px;
+  }
+  .smb,.smb2,.smb3,.smb4,.smb5,.smb6,.smb7,.smb8,.smb9,.sym{
+    position: absolute;
+    background: none;
+    border: none;
+  }
+  .smb,.smb2,.smb3,.smb4,.smb5,.smb6,.smb7,.smb8,.smb9{
+    width: 10px;
+    height: 60px;
+    transform: rotate(45deg);
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 30px;
+  }  
+  .sym{
+    width: 10px;
+    height: 60px;
+    transform: rotate(-45deg);
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 30px;
+  }
+  .tombol{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    transform: rotate(-45deg);
+    margin-left: -30px;
+    margin-top: 0px;
+    background: none;
+    border: none;
+  }
+  .tom10{
+    position: absolute;
+    margin-top: 385px;
+    margin-left: 112.5px;
+    height: 35px;
+    width: 75px;
+    border-radius: 10px;
+    border: black solid 2px;
+    background: none;
+  }
+  .rt{
+    position: absolute;
+    margin-left: 6px;
+    margin-top: -8.5px;
+    font-family: Times New Roman;
+  }
+  .end{
+    position: absolute;
+    width: 250px;
+    height: 80px;
+    background: black;
+    opacity: 0.5;
+    margin-left: 25px;
+    margin-top:180px;
+  }
+  .hai{
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    margin-top: 205px;
+    margin-left: 45px;
+  }
+  @media (min-width: 768px){
+    body{
+      background: black;
+    }
+  .jud {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 900px;
+    height: 1350px;
+    background: linear-gradient(to top left,#ff0000
+    ,#7000ff);
+    border-radius: 90px;
+    animation: kotak 2s infinite;
+    border: black solid 2px;
+  }
+  h2{
+    font-size: 90px;
+  }
+  .cju{
+    position: absolute;
+    margin-left: 100px;
+    width: 700px;
+    height: 60px;
+    border-bottom: black solid 8px;
+    margin-top: 100px;
+  }
+  .jul{
+    position: absolute;
+    margin-left: 4px;
+    font-family: Tahoma;
+    margin-top: -35px;
+  }
+  .jul2{
+    position: absolute;
+    margin-left: 252px;
+    font-family: Times New Roman;
+    margin-top: -35px;
+  }
+  .jul3{
+    position: absolute;
+    margin-left: 520px;
+    font-family: Monospace;
+    margin-top: -35px;
+  }
+  .bat,.bat2{
+    position: absolute;
+    width: 15px;
+    height: 720px;
+    background: black;
+  }
+  .bat4,.bat5{
+    position: absolute;
+    width: 720px;
+    height: 15px;
+    background: black;
+    margin-left: 30px;
+  }
+  .bat{
+    margin-top: 400px;
+    margin-left: 330px;
+  }
+  .bat2{
+    margin-left: 555px;
+    margin-top: 400px;
+  }
+  .bat4{
+    margin-top: 640px;
+    margin-left: 90px;
+  }
+  .bat5{
+    margin-top: 880px;
+    margin-left: 90px;
+  }
+  .tom,.tom2,.tom3,.tom4,.tom5,.tom6,.tom7,.tom8,.tom9{
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    background: none;
+    border: none;
+    border-radius: 100px;
+  }
+  .tom,.tom2,.tom3{
+    margin-top: 447.5px;
+  }
+  .tom,.tom4,.tom7{
+    margin-left: 135px;
+  }
+  .tom2,.tom5,.tom8{
+    margin-left: 369px;
+  }
+  .tom3,.tom6,.tom9{
+    margin-left: 615px;
+  }
+  .tom4,.tom5,.tom6{
+    margin-top: 687.5px;
+  }
+  .tom7,.tom8,.tom9{
+    margin-top: 925.5px;
+  }
+  .smb,.smb2,.smb3,.smb4,.smb5,.smb6,.smb7,.smb8,.smb9,.sym{
+    position: absolute;
+    background: none;
+    border: none;
+  }
+  .smb,.smb2,.smb3,.smb4,.smb5,.smb6,.smb7,.smb8,.smb9{
+    width: 30px;
+    height: 190px;
+    transform: rotate(45deg);
+    border-radius: 15px;
+    margin-top: -7.5px;
+    margin-left: 65px;
+  }  
+  .sym{
+    width: 30px;
+    height: 190px;
+    transform: rotate(-45deg);
+    border-radius: 15px;
+    margin-top: -7.5px;
+    margin-left: 65px;
+  }
+  .tombol{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    transform: rotate(-45deg);
+    margin-left: -75px;
+    margin-top: -5px;
+    background: none;
+    border: none;
+  }
+  .tom10{
+    position: absolute;
+    margin-top: 385px;
+    margin-left: 112.5px;
+    height: 35px;
+    width: 75px;
+    border-radius: 10px;
+    border: black solid 2px;
+    background: none;
+  }
+  .rt{
+    position: absolute;
+    margin-left: 6px;
+    margin-top: -8.5px;
+    font-family: Times New Roman;
+  }
+  .end{
+    position: absolute;
+    width: 750px;
+    height: 160px;
+    background: black;
+    opacity: 0.5;
+    margin-left: 75px;
+    margin-top:180px;
+  }
+  .hai{
+    position: absolute;
+    color: white;
+    font-size: 60px;
+    margin-top: 200px;
+    margin-left: 250px;
+  }
+  }
+    </style>
+  </head>
+  <body>
+    <div id="jud" class="jud">
+      <div class="cju">
+        <h2 class="jul">Tic</h2>    
+        <h2 class="jul2">Tac</h2>    
+        <h2 class="jul3">Toe</h2>    
+      </div>
+      <div class="bat"> </div>
+      <div class="bat2"> </div>
+      <div class="bat4"> </div>
+      <div class="bat5"> </div>
+      <div id="bul" class="tom">
+        <div id="smb" class="smb">
+          <button class="tombol" id="tom" type="submit"></button>
+        </div>
+        <div id="sym"  class="sym">
+        </div>
+      </div>
+      <div id="bul2" class="tom2">
+        <div id="smb2" class="smb">
+          <button class="tombol" id="tom2" type="submit"></button>
+        </div>
+        <div id="sym2"  class="sym">
+        </div>
+      </div>
+      <div id="bul3" class="tom3">
+        <div id="smb3" class="smb">
+          <button class="tombol" id="tom3" type="submit"></button>
+        </div>
+        <div id="sym3"  class="sym">
+        </div>
+      </div>
+      <div id="bul4" class="tom4">
+        <div id="smb4" class="smb">
+          <button class="tombol" id="tom4" type="submit"></button>
+        </div>
+        <div id="sym4"  class="sym">
+        </div>
+      </div>
+      <div id="bul5" class="tom5">
+        <div id="smb5" class="smb">
+          <button class="tombol" id="tom5" type="submit"></button>
+        </div>
+        <div id="sym5"  class="sym">
+        </div>
+      </div>
+      <div id="bul6" class="tom6">
+        <div id="smb6" class="smb">
+          <button class="tombol" id="tom6" type="submit"></button>
+        </div>
+        <div id="sym6"  class="sym">
+        </div>
+      </div>
+      <div id="bul7" class="tom7">
+        <div id="smb7" class="smb">
+          <button class="tombol" id="tom7" type="submit"></button>
+        </div>
+        <div id="sym7"  class="sym">
+        </div>
+      </div>
+      <div id="bul8" class="tom8">
+        <div id="smb8" class="smb">
+          <button class="tombol" id="tom8" type="submit"></button>
+        </div>
+        <div id="sym8"  class="sym">
+        </div>
+      </div>
+      <div id="bul9" class="tom9">
+        <div id="smb9" class="smb">
+          <button class="tombol" id="tom9" type="submit"></button>
+        </div>
+        <div id="sym9"  class="sym">
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" charset="utf-8">
+      var tom = document.getElementById("tom");
+      var tom2 = document.getElementById("tom2");
+      var tom3 = document.getElementById("tom3");
+      var tom4 = document.getElementById("tom4");
+      var tom5 = document.getElementById("tom5");
+      var tom6 = document.getElementById("tom6");
+      var tom7 = document.getElementById("tom7");
+      var tom8 = document.getElementById("tom8");
+      var tom9 = document.getElementById("tom9");
+      var bul = document.getElementById("bul");
+      var bul2 = document.getElementById("bul2");
+      var bul3 = document.getElementById("bul3");
+      var bul4 = document.getElementById("bul4");
+      var bul5 = document.getElementById("bul5");
+      var bul6 = document.getElementById("bul6");
+      var bul7 = document.getElementById("bul7");
+      var bul8 = document.getElementById("bul8");
+      var bul9 = document.getElementById("bul9");
+      var smb = document.getElementById("smb");
+      var smb2 = document.getElementById("smb2");
+      var smb3 = document.getElementById("smb3");
+      var smb4 = document.getElementById("smb4");
+      var smb5 = document.getElementById("smb5");
+      var smb6 = document.getElementById("smb6");
+      var smb7 = document.getElementById("smb7");
+      var smb8 = document.getElementById("smb8");
+      var smb9 = document.getElementById("smb9");
+      var tom10 = document.getElementById("tom10");
+      var sym = document.getElementById("sym");
+      var sym2 = document.getElementById("sym2");
+      var sym3 = document.getElementById("sym3");
+      var sym4 = document.getElementById("sym4");
+      var sym5 = document.getElementById("sym5");
+      var sym6 = document.getElementById("sym6");
+      var sym7 = document.getElementById("sym7");
+      var sym8 = document.getElementById("sym8");
+      var sym9 = document.getElementById("sym9");
+      var jud = document.getElementById("jud");
+      var game = 0;
+      var index = 0;
+      var index9 = 0;
+      var index5 = 0;
+      var index6 = 0;
+      var index7 = 0;
+      var index8 = 0;
+      var index2 = 0;
+      var index3 = 0;
+      var index4 = 0;
+      var indexx = 0;
+      var indexx2 = 0;
+      var indexx3 = 0;
+      var indexx4 = 0;
+      var indexx5 = 0;
+      var indexx6 = 0;
+      var indexx7 = 0;
+      var indexx8 = 0;
+      var indexx9 = 0;
+      var scor = 0;
+      var scor2 = 0;
+      var scor3 = 0;
+      var scor4 = 0;
+      var scor5 = 0;
+      var scor6 = 0;
+      var scor7 = 0;
+      var scor8 = 0;
+      var scor9 = 0;
+      var hasil = document.createElement("div");
+      var text = document.createElement("h2");
+      hasil.setAttribute("class","end");
+      text.setAttribute("class","hai");
+      tom.addEventListener('click',function(){
+        scor++;
+        if(scor == 1){
+          game++;
+          if(game % 2 == 1){
+            index++;
+            sym.style.backgroundColor = "black";
+            smb.style.backgroundColor = "black";
+          }else{
+            indexx++;
+            tom.style.border = "black solid 10px";
+            tom.style.borderRadius = 100 + "%";
+          }
+        }
+        if(index == 1){
+          if(index4 == 1){
+            if(index7 == 1){
+              if(game % 2 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+              }
+            }
+          }
+        }
+        if(index == 1){
+          if(index2 == 1){
+            if(index3 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(index == 1){
+          if(index5 == 1){
+            if(index9 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(index2 == 1){
+          if(index8 == 1){
+            if(index5 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(index3 == 1){
+          if(index6 == 1){
+            if(index9 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(index3 == 1){
+          if(index5 == 1){
+            if(index7 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(index4 == 1){
+          if(index5 == 1){
+            if(index6 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(index7 == 1){
+          if(index8 == 1){
+            if(index9 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx == 1){
+          if(indexx4 == 1){
+            if(indexx7 == 1){
+              if(game % 2 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+              }
+            }
+          }
+        }
+        if(indexx == 1){
+          if(indexx2 == 1){
+            if(indexx3 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx == 1){
+          if(indexx5 == 1){
+            if(indexx9 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx2 == 1){
+          if(indexx8 == 1){
+            if(indexx5 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx3 == 1){
+          if(indexx6 == 1){
+            if(indexx9 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx3 == 1){
+          if(indexx5 == 1){
+            if(indexx7 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx4 == 1){
+          if(indexx5 == 1){
+            if(indexx6 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx7 == 1){
+          if(indexx8 == 1){
+            if(indexx9 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+      });
+      tom2.addEventListener('click',function(){
+        scor2++;
+        if(scor2 == 1){
+          game++;
+          if(game % 2 == 1){
+            index2++;
+            sym2.style.backgroundColor = "black";
+            smb2.style.backgroundColor = "black";
+          }else{
+            indexx2++;
+            tom2.style.border = "black solid 10px";
+            tom2.style.borderRadius = 100 + "%";
+          }
+        }
+        if(index == 1){
+          if(index4 == 1){
+            if(index7 == 1){
+              if(game % 2 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+              }
+            }
+          }
+        }
+        if(index == 1){
+          if(index2 == 1){
+            if(index3 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(index == 1){
+          if(index5 == 1){
+            if(index9 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(index2 == 1){
+          if(index8 == 1){
+            if(index5 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(index3 == 1){
+          if(index6 == 1){
+            if(index9 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(index3 == 1){
+          if(index5 == 1){
+            if(index7 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(index4 == 1){
+          if(index5 == 1){
+            if(index6 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(index7 == 1){
+          if(index8 == 1){
+            if(index9 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx == 1){
+          if(indexx4 == 1){
+            if(indexx7 == 1){
+              if(game % 2 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+              }
+            }
+          }
+        }
+        if(indexx == 1){
+          if(indexx2 == 1){
+            if(indexx3 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx == 1){
+          if(indexx5 == 1){
+            if(indexx9 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx2 == 1){
+          if(indexx8 == 1){
+            if(indexx5 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx3 == 1){
+          if(indexx6 == 1){
+            if(indexx9 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx3 == 1){
+          if(indexx5 == 1){
+            if(indexx7 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx4 == 1){
+          if(indexx5 == 1){
+            if(indexx6 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx7 == 1){
+          if(indexx8 == 1){
+            if(indexx9 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+      });
+      tom3.addEventListener('click',function(){
+        scor3++;
+        if(scor3 == 1){
+          game++;
+          if(game % 2 == 1){
+            index3++;
+            sym3.style.backgroundColor = "black";
+            smb3.style.backgroundColor = "black";
+          }else{
+            indexx3++;
+            tom3.style.border = "black solid 10px";
+            tom3.style.borderRadius = 100 + "%";
+          }
+        }
+        if(index == 1){
+          if(index4 == 1){
+            if(index7 == 1){
+              if(game % 2 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+              }
+            }
+          }
+        }
+        if(index == 1){
+          if(index2 == 1){
+            if(index3 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(index == 1){
+          if(index5 == 1){
+            if(index9 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(index2 == 1){
+          if(index8 == 1){
+            if(index5 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(index3 == 1){
+          if(index6 == 1){
+            if(index9 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(index3 == 1){
+          if(index5 == 1){
+            if(index7 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(index4 == 1){
+          if(index5 == 1){
+            if(index6 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(index7 == 1){
+          if(index8 == 1){
+            if(index9 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx == 1){
+          if(indexx4 == 1){
+            if(indexx7 == 1){
+              if(game % 2 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+              }
+            }
+          }
+        }
+        if(indexx == 1){
+          if(indexx2 == 1){
+            if(indexx3 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx == 1){
+          if(indexx5 == 1){
+            if(indexx9 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx2 == 1){
+          if(indexx8 == 1){
+            if(indexx5 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx3 == 1){
+          if(indexx6 == 1){
+            if(indexx9 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx3 == 1){
+          if(indexx5 == 1){
+            if(indexx7 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx4 == 1){
+          if(indexx5 == 1){
+            if(indexx6 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx7 == 1){
+          if(indexx8 == 1){
+            if(indexx9 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+      });
+      tom4.addEventListener('click',function(){
+        scor4++;
+        if(scor4 == 1){
+          game++;
+          if(game % 2 == 1){
+            index4++;
+            sym4.style.backgroundColor = "black";
+            smb4.style.backgroundColor = "black";
+          }else{
+            indexx4++;
+            tom4.style.border = "black solid 10px";
+            tom4.style.borderRadius = 100 + "%";
+          }
+        }
+        if(index == 1){
+          if(index4 == 1){
+            if(index7 == 1){
+              if(game % 2 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+              }
+            }
+          }
+        }
+        if(index == 1){
+          if(index2 == 1){
+            if(index3 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(index == 1){
+          if(index5 == 1){
+            if(index9 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(index2 == 1){
+          if(index8 == 1){
+            if(index5 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(index3 == 1){
+          if(index6 == 1){
+            if(index9 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(index3 == 1){
+          if(index5 == 1){
+            if(index7 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(index4 == 1){
+          if(index5 == 1){
+            if(index6 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(index7 == 1){
+          if(index8 == 1){
+            if(index9 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx == 1){
+          if(indexx4 == 1){
+            if(indexx7 == 1){
+              if(game % 2 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+              }
+            }
+          }
+        }
+        if(indexx == 1){
+          if(indexx2 == 1){
+            if(indexx3 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx == 1){
+          if(indexx5 == 1){
+            if(indexx9 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx2 == 1){
+          if(indexx8 == 1){
+            if(indexx5 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx3 == 1){
+          if(indexx6 == 1){
+            if(indexx9 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx3 == 1){
+          if(indexx5 == 1){
+            if(indexx7 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx4 == 1){
+          if(indexx5 == 1){
+            if(indexx6 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx7 == 1){
+          if(indexx8 == 1){
+            if(indexx9 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+      });
+      tom5.addEventListener('click',function(){
+        scor5++;
+        if(scor5 == 1){
+          game++;
+          if(game % 2 == 1){
+            index5++;
+            sym5.style.backgroundColor = "black";
+            smb5.style.backgroundColor = "black";
+          }else{
+            indexx5++;
+            tom5.style.border = "black solid 10px";
+            tom5.style.borderRadius = 100 + "%";
+          }
+        }
+        if(index == 1){
+          if(index4 == 1){
+            if(index7 == 1){
+              if(game % 2 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+              }
+            }
+          }
+        }
+        if(index == 1){
+          if(index2 == 1){
+            if(index3 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(index == 1){
+          if(index5 == 1){
+            if(index9 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(index2 == 1){
+          if(index8 == 1){
+            if(index5 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(index3 == 1){
+          if(index6 == 1){
+            if(index9 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(index3 == 1){
+          if(index5 == 1){
+            if(index7 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(index4 == 1){
+          if(index5 == 1){
+            if(index6 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(index7 == 1){
+          if(index8 == 1){
+            if(index9 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx == 1){
+          if(indexx4 == 1){
+            if(indexx7 == 1){
+              if(game % 2 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+              }
+            }
+          }
+        }
+        if(indexx == 1){
+          if(indexx2 == 1){
+            if(indexx3 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx == 1){
+          if(indexx5 == 1){
+            if(indexx9 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx2 == 1){
+          if(indexx8 == 1){
+            if(indexx5 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx3 == 1){
+          if(indexx6 == 1){
+            if(indexx9 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx3 == 1){
+          if(indexx5 == 1){
+            if(indexx7 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx4 == 1){
+          if(indexx5 == 1){
+            if(indexx6 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx7 == 1){
+          if(indexx8 == 1){
+            if(indexx9 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+      });
+      tom6.addEventListener('click',function(){
+        scor6++;
+        if(scor6 == 1){
+          game++;
+          if(game % 2 == 1){
+            index6++;
+            sym6.style.backgroundColor = "black";
+            smb6.style.backgroundColor = "black";
+          }else{
+            indexx6++;
+            tom6.style.border = "black solid 10px";
+            tom6.style.borderRadius = 100 + "%";
+          }
+        }
+        if(index == 1){
+          if(index4 == 1){
+            if(index7 == 1){
+              if(game % 2 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+              }
+            }
+          }
+        }
+        if(index == 1){
+          if(index2 == 1){
+            if(index3 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(index == 1){
+          if(index5 == 1){
+            if(index9 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(index2 == 1){
+          if(index8 == 1){
+            if(index5 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(index3 == 1){
+          if(index6 == 1){
+            if(index9 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(index3 == 1){
+          if(index5 == 1){
+            if(index7 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(index4 == 1){
+          if(index5 == 1){
+            if(index6 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(index7 == 1){
+          if(index8 == 1){
+            if(index9 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx == 1){
+          if(indexx4 == 1){
+            if(indexx7 == 1){
+              if(game % 2 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+              }
+            }
+          }
+        }
+        if(indexx == 1){
+          if(indexx2 == 1){
+            if(indexx3 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx == 1){
+          if(indexx5 == 1){
+            if(indexx9 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx2 == 1){
+          if(indexx8 == 1){
+            if(indexx5 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx3 == 1){
+          if(indexx6 == 1){
+            if(indexx9 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx3 == 1){
+          if(indexx5 == 1){
+            if(indexx7 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx4 == 1){
+          if(indexx5 == 1){
+            if(indexx6 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx7 == 1){
+          if(indexx8 == 1){
+            if(indexx9 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+      });
+      tom7.addEventListener('click',function(){
+        scor7++;
+        if(scor7 == 1){
+          game++;
+          if(game % 2 == 1){
+            index7++;
+            sym7.style.backgroundColor = "black";
+            smb7.style.backgroundColor = "black";
+          }else{
+            indexx7++;
+            tom7.style.border = "black solid 10px";
+            tom7.style.borderRadius = 100 + "%";
+          }
+        }
+        if(index == 1){
+          if(index4 == 1){
+            if(index7 == 1){
+              if(game % 2 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+              }
+            }
+          }
+        }
+        if(index == 1){
+          if(index2 == 1){
+            if(index3 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(index == 1){
+          if(index5 == 1){
+            if(index9 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(index2 == 1){
+          if(index8 == 1){
+            if(index5 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(index3 == 1){
+          if(index6 == 1){
+            if(index9 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(index3 == 1){
+          if(index5 == 1){
+            if(index7 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(index4 == 1){
+          if(index5 == 1){
+            if(index6 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(index7 == 1){
+          if(index8 == 1){
+            if(index9 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx == 1){
+          if(indexx4 == 1){
+            if(indexx7 == 1){
+              if(game % 2 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+              }
+            }
+          }
+        }
+        if(indexx == 1){
+          if(indexx2 == 1){
+            if(indexx3 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx == 1){
+          if(indexx5 == 1){
+            if(indexx9 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx2 == 1){
+          if(indexx8 == 1){
+            if(indexx5 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx3 == 1){
+          if(indexx6 == 1){
+            if(indexx9 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx3 == 1){
+          if(indexx5 == 1){
+            if(indexx7 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx4 == 1){
+          if(indexx5 == 1){
+            if(indexx6 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx7 == 1){
+          if(indexx8 == 1){
+            if(indexx9 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+      });
+      tom8.addEventListener('click',function(){
+        scor8++;
+        if(scor8 == 1){
+          game++;
+          if(game % 2 == 1){
+            index8++;
+            sym8.style.backgroundColor = "black";
+            smb8.style.backgroundColor = "black";
+          }else{
+            indexx8++;
+            tom8.style.border = "black solid 10px";
+            tom8.style.borderRadius = 100 + "%";
+          }
+        }
+        if(index == 1){
+          if(index4 == 1){
+            if(index7 == 1){
+              if(game % 2 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+              }
+            }
+          }
+        }
+        if(index == 1){
+          if(index2 == 1){
+            if(index3 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(index == 1){
+          if(index5 == 1){
+            if(index9 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(index2 == 1){
+          if(index8 == 1){
+            if(index5 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(index3 == 1){
+          if(index6 == 1){
+            if(index9 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(index3 == 1){
+          if(index5 == 1){
+            if(index7 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(index4 == 1){
+          if(index5 == 1){
+            if(index6 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(index7 == 1){
+          if(index8 == 1){
+            if(index9 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx == 1){
+          if(indexx4 == 1){
+            if(indexx7 == 1){
+              if(game % 2 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+              }
+            }
+          }
+        }
+        if(indexx == 1){
+          if(indexx2 == 1){
+            if(indexx3 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx == 1){
+          if(indexx5 == 1){
+            if(indexx9 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx2 == 1){
+          if(indexx8 == 1){
+            if(indexx5 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx3 == 1){
+          if(indexx6 == 1){
+            if(indexx9 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx3 == 1){
+          if(indexx5 == 1){
+            if(indexx7 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx4 == 1){
+          if(indexx5 == 1){
+            if(indexx6 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx7 == 1){
+          if(indexx8 == 1){
+            if(indexx9 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+      });
+      tom9.addEventListener('click',function(){
+        scor9++;
+        if(scor9 == 1){
+          game++;
+          if(game % 2 == 1){
+            index9++;
+            sym9.style.backgroundColor = "black";
+            smb9.style.backgroundColor = "black";
+          }else{
+            indexx9++;
+            tom9.style.border = "black solid 10px";
+            tom9.style.borderRadius = 100 + "%";
+          }
+        }
+        if(index == 1){
+          if(index4 == 1){
+            if(index7 == 1){
+              if(game % 2 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+              }
+            }
+          }
+        }
+        if(index == 1){
+          if(index2 == 1){
+            if(index3 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(index == 1){
+          if(index5 == 1){
+            if(index9 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(index2 == 1){
+          if(index8 == 1){
+            if(index5 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(index3 == 1){
+          if(index6 == 1){
+            if(index9 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(index3 == 1){
+          if(index5 == 1){
+            if(index7 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(index4 == 1){
+          if(index5 == 1){
+            if(index6 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(index7 == 1){
+          if(index8 == 1){
+            if(index9 == 1){
+                text.textContent = "PLAYER 1 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx == 1){
+          if(indexx4 == 1){
+            if(indexx7 == 1){
+              if(game % 2 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+              }
+            }
+          }
+        }
+        if(indexx == 1){
+          if(indexx2 == 1){
+            if(indexx3 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx == 1){
+          if(indexx5 == 1){
+            if(indexx9 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx2 == 1){
+          if(indexx8 == 1){
+            if(indexx5 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx3 == 1){
+          if(indexx6 == 1){
+            if(indexx9 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx3 == 1){
+          if(indexx5 == 1){
+            if(indexx7 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx4 == 1){
+          if(indexx5 == 1){
+            if(indexx6 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+        if(indexx7 == 1){
+          if(indexx8 == 1){
+            if(indexx9 == 1){
+                text.textContent = "PLAYER 2 WIN";
+                jud.appendChild(text);
+                jud.appendChild(hasil);
+            }
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
